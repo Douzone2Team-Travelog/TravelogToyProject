@@ -16,7 +16,8 @@ local.properties
 .recommenders
 .classpath
 .project
-.MF
+*.MF
+
 # External tool builders
 .externalToolBuilders/
 
