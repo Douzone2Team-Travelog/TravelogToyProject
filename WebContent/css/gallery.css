@@ -1,0 +1,83 @@
+@charset "UTF-8";
+html, body{
+    height:100%;
+}
+img{
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/*Header*/
+header {
+    width:100%;
+    height: 100px;
+    position:fixed;
+    top:0;
+    z-index:9;
+    background-color: #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+}
+header .logo{
+    position: absolute;
+    top: 7px;
+    bottom: 0;
+    left:0;
+    margin: auto;
+}
+
+header .team {
+    position: absolute;
+    top: 0px;
+    bottom:0px;
+    right: 0px;
+    z-index:1;
+    display: flex;
+}
+
+header .team .team_image{
+    /*position: absolute;*/
+    right: 0;
+    margin: auto;
+    display: flex;
+}
+header .team .team_name{
+    padding-left:10px;
+    margin:auto;
+    display: flex;
+}
+header .team .material-icons{
+    padding-right:10px;
+    margin:auto;
+    display:flex;
+}
+
+header .team .all_member{
+    display:none;
+}
+
+header .team .material-icons:active .all_member{
+    display:flex;
+}
+/* CONTAINER*/
+.container{
+    height:100%;
+}
+/* NAV */
+nav{
+    float:left;
+    width:200px;
+    height:100%;
+    left:0;
+    background-color:#0f0f0f;
+}
+
+/* SECTION */
+section{
+    float:right;
+    height:100%;
+    background-color:#f0f0f0;
+}
