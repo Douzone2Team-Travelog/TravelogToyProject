@@ -11700,3 +11700,7 @@ body {
 .footer {
   padding: 5rem 0;
 }
+
+.navbar-collapse{
+  padding-left:9% !important;
+}
