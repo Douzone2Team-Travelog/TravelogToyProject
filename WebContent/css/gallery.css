@@ -115,3 +115,7 @@ section{
     margin-right: calc(-0.5 * var(--bs-gutter-x));
     margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
+
+.team_image{
+    width:200px !important;
+}
