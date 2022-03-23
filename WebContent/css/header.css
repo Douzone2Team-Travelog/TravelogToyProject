@@ -626,29 +626,6 @@ svg {
     vertical-align: middle;
 }
 
-/*내가 만든 헤더*/
-
-nav .header-container .team{
-    width:100%;
-}
-nav .header-container .team .team_image{
-    /*position: absolute;*/
-    top:33px;
-    /*right: 260px;*/
-    margin: auto;
-    display: inline-block;
-}
-nav .header-container .team .team_image img{
-    border-radius: 100%;
-}
-nav .header-container .team .team_name{
-    /*position: absolute;*/
-    padding-left:10px;
-    top:47px;
-    /*right:130px;*/
-    margin:auto;
-    display: inline-block;
-    color:black !important;
-    font-family: "맑은 고딕" !important;
-    font-size:16px !important;
+.team_image{
+    width:200px !important;
 }
