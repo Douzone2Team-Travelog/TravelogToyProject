@@ -9,6 +9,8 @@
         <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
         <link rel="stylesheet" href="../css/header.css" />
         <link rel="stylesheet" href="../css/index_youtube.css" />
+        <!-- jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -19,10 +21,14 @@
         <link href="../css/index.css" rel="stylesheet" />
         <link href="../tc.css" rel="stylesheet"/>
         <link rel="import" href="footer.html">
-    
+        <!--GSAP & ScrollToPlugin-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+
         <script src="https://www.w3schools.com/lib/w3.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="../js/loadHtml.js"></script>
+        <script defer src="../js/index.js"></script>
         <script defer src="../js/youtube.js"></script>
         <script src="../js/header.js"></script>
 
@@ -32,7 +38,7 @@
     <script>loadHTML("header.html")</script>
 
         <!-- Masthead-->
-        <header class="masthead">
+        <header id="intro" class="masthead fade" style="position: relative;">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
@@ -44,8 +50,8 @@
             </div>
         </header>
         <!-- About-->
-        
-        <section class="about-section text-center" id="about" style="height: 1500px; margin: 10rem;">
+
+        <section  class="fade about-section text-center" id="intro about" style="height: 780px; margin: 10rem;">
             <!-- <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
@@ -54,13 +60,14 @@
                 <div class="inner " style="font-size: 5rem;">
                         <h1 class="margin">Welcome To Travelog</h1>
                         <hr style="height:5px; width:100%; color:grey; margin-bottom: 50px;">
+
                     </div>
-                <div class="youtube container-fluid bg-1 text-center"> 
+                <div class="youtube container-fluid bg-1 text-center" style="width: 100%"> 
                     <div class="youtube__area">
                         <div id="player"></div>
                     </div>
-                    <div class="youtube__cover"></div> 
-                    
+                    <div class="youtube__cover"></div>
+
                 </div>
             <!-- </div> -->
         </section>
@@ -70,7 +77,7 @@
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
                 
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                <div  class="fade row gx-0 mb-4 mb-lg-5 align-items-center" id="intro">
                     
                     <div class="col-xl-8 col-lg-7"> 
                         <div class="wrapper">
@@ -83,7 +90,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-5">
+                    <div class="fade col-xl-4 col-lg-5" id="intro">
                         <div class="featured-text text-center text-lg-left">
                             <h2>여행 사진(임지영 님)</h2>
                             <p class="text-black-50 mb-0">
@@ -116,7 +123,8 @@
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">여행 사진 공유</h4>
                                     <p class="mb-0 text-white-50">좋은 여행 사진을 Travelog로 공유하세요</p>
-                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                    <hr class="d-none d-lg-block mb-0 ms-0" style="width:100%"/>
+                                    <img src="../images/3.jpg" alt="Icon" class="floating floating1" style="width:80%; margin-top:30px" />
                                 </div>
                             </div>
                         </div>
@@ -141,7 +149,8 @@
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
                                     <h4 class="text-white">그 장소가 어디든</h4>
                                     <p class="mb-0 text-white-50">어느 장소든 상관 없습니다</p>
-                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                    <hr class="d-none d-lg-block mb-0 me-0" style="width:100%"/>
+                                    <img src="../images/2.jpg" alt="Icon" class="floating floating2" style="width:80%; margin-top:30px" />
                                 </div>
                             </div>
                         </div>
@@ -149,11 +158,12 @@
                 </div>
             </div>
         </section>
+
         <!-- Member-->
-        <section class="projects-section bg-light" id="member">
+        <section class="fade projects-section bg-light" id="intro member">
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                <div class="fade row gx-0 mb-4 mb-lg-5 align-items-center" id="intro">
                     <div class="col-xl-8 col-lg-7">
                         <div class="wrapper">
                             <div class="card"><img src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"/>
@@ -188,7 +198,7 @@
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
                     <div class="col-lg-6">
                         <div class="wrapper">
-                            <div class="card" ><img src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"/>
+                            <div class="card" ><img src="https://cdn.pixabay.com/photo/2013/10/02/23/03/mountains-190055_1280.jpg"/>
                                 <div class="info">
                                     <h1>Mountain</h1>
                                     <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
@@ -213,7 +223,7 @@
                 <div class="row gx-0 justify-content-center">
                     <div class="col-lg-6">
                         <div class="wrapper">
-                            <div class="card"><img src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"/>
+                            <div class="card"><img src="https://cdn.pixabay.com/photo/2013/10/02/23/03/mountains-190055_1280.jpg"/>
                                 <div class="info">
                                     <h1>Mountain</h1>
                                     <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
@@ -238,16 +248,17 @@
         </section>
         
         <!-- Schedule-->
-        <section class="projects-section bg-light" id="schedule">
+        <section class="fade projects-section bg-light" id="intro schedule">
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
                     <div class="col-xl-8 col-lg-7">
                         <div class="wrapper">
-                            <div class="card"><img src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"/>
+                            <div class="card"><img src="https://cdn.pixabay.com/photo/2016/10/25/12/28/iceland-1768744_1280.jpg"/>
                                 <div class="info">
-                                    <h1>Mountain</h1>
-                                    <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+                                    <h1>폭포</h1>
+                                    <p>흐르는 강물이 거의 수직으로 급속하게 떨어지는 곳. 흐르는 물이 서로 다른 지층을 지날 때 약한 지반이 침식되면서 생겨나는 곳이다. 덕분에 대부분의 폭포들은 침식 작용으로 점점 뒤로 밀려나고 있으며, 나이아가라 폭포는 1년에 1m 정도씩 뒤로 움직이고 있다고 한다.
+                                    </p>
                                 
                                 </div>
                             </div>
@@ -272,11 +283,10 @@
                     <div class="col-lg-6">
                         <div class="wrapper">
                             <div class="card">
-                                <img src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"/>
+                                <img src="https://cdn.pixabay.com/photo/2016/08/15/06/05/jeju-island-cheonjiyeon-waterfall-1594590_1280.jpg"/>
                                 <div class="info">
-                                    <h1>Mountain</h1>
-                                    <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
-                                
+                                    <h1>폭포</h1>
+                                    <p>흐르는 강물이 거의 수직으로 급속하게 떨어지는 곳. 흐르는 물이 서로 다른 지층을 지날 때 약한 지반이 침식되면서 생겨나는 곳이다. 덕분에 대부분의 폭포들은 침식 작용으로 점점 뒤로 밀려나고 있으며, 나이아가라 폭포는 1년에 1m 정도씩 뒤로 움직이고 있다고 한다.
                                 </div>
                             </div>
                         </div>
@@ -297,11 +307,10 @@
                 <div class="row gx-0 justify-content-center">
                     <div class="col-lg-6">
                         <div class="wrapper">
-                            <div class="card"><img src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"/>
+                            <div class="card"><img src="https://cdn.pixabay.com/photo/2016/08/15/06/05/jeju-island-cheonjiyeon-waterfall-1594590_1280.jpg"/>
                                 <div class="info">
-                                    <h1>Mountain</h1>
-                                    <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
-                                
+                                    <h1>폭포</h1>
+                                    <p>흐르는 강물이 거의 수직으로 급속하게 떨어지는 곳. 흐르는 물이 서로 다른 지층을 지날 때 약한 지반이 침식되면서 생겨나는 곳이다. 덕분에 대부분의 폭포들은 침식 작용으로 점점 뒤로 밀려나고 있으며, 나이아가라 폭포는 1년에 1m 정도씩 뒤로 움직이고 있다고 한다.
                                 </div>
                             </div>
                         </div>
