@@ -11564,7 +11564,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.5) 75%, #000 100%), url("../images/background.jpg");
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.5) 75%, #000 255%), url("../images/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11607,10 +11607,10 @@ body {
   }
 }
 
-.about-section {
-  padding-top: 10rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0.8) 100%);
+.about-section{
+	padding-top: 10rem;
 }
+
 .about-section p {
   margin-bottom: 5rem;
 }
@@ -11704,4 +11704,8 @@ body {
 
 .navbar-collapse{
   padding-left:9% !important;
+}
+
+.tripWeb{
+	color: gray !important;
 }
