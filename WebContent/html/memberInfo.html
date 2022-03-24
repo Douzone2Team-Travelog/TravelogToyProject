@@ -13,13 +13,40 @@
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
+		<link href="../css/header.css" rel="stylesheet"/>
         <link href="../css/styles.css" rel="stylesheet" />
         <link href="../css/info.css" rel="stylesheet" />
-		<link href="../css/header.css" rel="stylesheet"/>
+		<link href="../css/footer.css" rel="stylesheet"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="../js/loadHtml.js"></script>
+
+		<!--<style>
+			svg {
+				vertical-align: middle;
+			}
+
+			.team_image{
+				width:200px !important;
+			}
+
+			.team #all-members{
+				display: none;
+			}
+			.team:active #all-members{
+				display: inline-block !important;
+				z-index: 9;
+				background-color:beige;
+			}
+
+			li{
+				list-style: none;
+			}
+
+		</style>-->
     </head>
-    <body id="page-top">
+    <body>
         <!-- Navigation-->
+		<!--<script>loadHTML("header.html");</script>-->
 		<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
 			<div class="header-container px-4 px-lg-5">
 				<a href="/" class="logo"> <img src="../images/logo.png" alt="Travelog logo"/></a>
@@ -35,18 +62,17 @@
 						<li class="nav-item"><a class="nav-link" href="memberInfo.html">Member</a></li>
 					</ul>
 				</div>
-				<div class="team">
-					<a href="#" class = "team_image">
+				<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
 						<img src="../images/userImage.png" alt="user profile image">
-						<!--<div id="all_members">
-							<li class="member">Limitiz❣</li>
-							<li class="member">JeongMin96😎</li>
-							<li class="member">LemonGrab🍋</li>
-							<li class="member">JihoGang🙂</li>
-							<li class="member">Jiyoung9898</li>
-						</div>-->
 					</a>
-				</div>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Limitiz❣</a>
+						<a class="dropdown-item" href="#">JeongMin96😎</a>
+						<a class="dropdown-item" href="#">LemonGrab🍋</a>
+						<a class="dropdown-item" href="#">JihoGang🙂</a>
+					</div>
+				</li>
 
 			</div>
 		</nav>
@@ -245,5 +271,6 @@
        
 </script> 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHOeK9ZbVb62l9ff_udI-0bHWpYDhDg5k&callback=myMap"></script>
-    </body>
+			<script>loadHTML("footer.html");</script>
+	</body>
 </html>

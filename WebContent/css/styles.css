@@ -4936,7 +4936,7 @@ textarea.form-control-lg {
     transition: none;
   }
 }
-.page-link:hover {
+body nav div .page-link:hover {
   z-index: 2;
   color: #50817e;
   background-color: #e9ecef;
