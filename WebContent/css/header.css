@@ -630,3 +630,11 @@ svg {
 .team_image{
     width:200px !important;
 }
+
+.team_image .all_members{
+    display: none;
+}
+/*
+.team_image:hover .all_members{
+    display: block;
+}*/
