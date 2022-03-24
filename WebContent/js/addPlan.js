@@ -12,8 +12,7 @@ $(function(){
 			let searchInput = $('#gmap').contents().find('#location-search-input').val();
 			$('.place').val(searchInput);
 			console.log(searchInput);
-	})
-
+	})	
 	
 });
 

@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-	$(".modal_show_jeju").click(function() {
+	$(".modal_show").click(function() {
 		var tmp = $('.jeju').attr('src');
 		console.log(tmp);
 		$('#cmp_img').attr('src', tmp);
@@ -16,4 +16,6 @@ $(document).ready(function() {
 		$('#cmp_img').attr("src", tmp);
 		$("#cmpModal").modal("show");
 	});
+	
+
 });
