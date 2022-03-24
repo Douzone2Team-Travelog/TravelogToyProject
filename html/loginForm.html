@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Login Form </title>
+<link rel="shortcut icon" href="../images/favicon.ico"/>
+<link rel="stylesheet" href="../css/sign.css">
+</head>
+<body>
+	<div class="container">
+		<form class="form" id="login">
+			<h1 class="title">Login</h1>
+			<div id="msg" class="message message_error"></div>
+			<div class="input_group">
+				<input type="text" id="loginUsername" class="input" autofocus placeholder="Username or email">
+			</div>
+			<div class="input_group">
+				<input type="password" id="loginUserpwd" class="input" autofocus placeholder="Password">
+			</div>
+			<button class="btn" type="submit">Continue</button>
+			<p class="text">
+				<a href="#" class="link">Forgot your password?</a>
+			</p>
+			<p class="text">
+				<a href="signupForm.html" class="link" id="linkCreateAccount">Don't have an account? Create account</a>
+			</p>
+		</form>
+	</div>
+	<script src="../js/loginForm.js"></script>
+</body>
+</html>
