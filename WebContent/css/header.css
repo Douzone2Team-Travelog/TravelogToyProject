@@ -5,6 +5,7 @@
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+    background-color: white !important;
 }
 nav-link {
     display: block;
@@ -40,7 +41,7 @@ nav-link {
 }
 .nav-tabs .nav-link.disabled {
     color: #6c757d;
-    background-color: transparent;
+    background-color: white;
     border-color: transparent;
 }
 .nav-tabs .nav-link.active,
@@ -320,7 +321,7 @@ nav-link {
         z-index: 1000;
         flex-grow: 1;
         visibility: visible !important;
-        background-color: transparent;
+        background-color: white;
         border-right: 0;
         border-left: 0;
         transition: none;
@@ -373,7 +374,7 @@ nav-link {
         z-index: 1000;
         flex-grow: 1;
         visibility: visible !important;
-        background-color: transparent;
+        background-color: white;
         border-right: 0;
         border-left: 0;
         transition: none;
@@ -426,7 +427,7 @@ nav-link {
         z-index: 1000;
         flex-grow: 1;
         visibility: visible !important;
-        background-color: transparent;
+        background-color: white;
         border-right: 0;
         border-left: 0;
         transition: none;

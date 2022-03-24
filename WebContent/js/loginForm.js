@@ -21,7 +21,7 @@ loginForm.addEventListener("submit", e => {
 	
 	// 값을 다 넣었으면 페이지 이동
 	if(inputName.value && inputPwd.value){
-		location.replace('../index.html');
+		location.replace('../html/index.html');
 	}
 });
 
