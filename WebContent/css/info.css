@@ -1,0 +1,21 @@
+#memberInfoTable{
+ 	width: 100%;
+ 	border-top: 4px solid black;
+	border-left: 2px solid silver;
+	border-right: 2px solid silver;
+	border-bottom: 2px solid silver;
+ }
+ 
+ #memberInfoTable thead{
+ 	font-size: 1.4em;
+ 	border-bottom: 2px solid silver;
+ }
+ #memberInfoTable tr td{
+ 	text-align: center;
+ 	border: 2px solid silver;
+ }
+ 
+ #searchButton{
+ 	font-size: 1.4em;
+ 	width: 400px;
+ }
