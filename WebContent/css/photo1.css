@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+/* COMMON */
+html, body{
+    height:100%;
+}
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    width:100%;
+    height: 80px;
+    position:fixed;
+    top:0;
+    z-index:9;
+    background-color: lightgray;
+    border-bottom: 1px solid #c8c8c8;
+}
+header .logo{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+}
+header .team {
+    position: absolute;
+    top: 0px;
+    bottom:0px;
+    right: 0px;
+    z-index:1;
+    display: flex;
+}
+
+header .team .team_image{
+    /*position: absolute;*/
+    right: 0;
+    margin: auto;
+    display: flex;
+}
+header .team .team_name{
+    padding-left:10px;
+    margin:auto;
+    display: flex;
+}
+header .team .material-icons{
+    padding-right:10px;
+    margin:auto;
+    display:flex;
+}
+
+header .team .all_member{
+    display:none;
+}
+
+header .team .material-icons:active .all_member{
+    display:flex;
+}
+
+/*CONTAINER*/
+.container{
+    padding-top:80px;
+    width:80%;
+    margin:auto auto;
+    height:100%;
+}
+
+/* SECTION */
+section{
+    padding-left:200px;
+    width:100%;
+    height:100%;
+}
+
+/* TEXT */
+.text-center {
+    text-align: center !important;
+}
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+.text-muted {
+    --bs-text-opacity: 1;
+    color: #6c757d !important;
+}
+.page-section h2.section-heading, .page-section .section-heading.h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.page-section h3.section-subheading, .page-section .section-subheading.h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-bottom: 2rem;
+}
+
+.day-title{
+    height: 50px;
+    padding-left:2.5%;
+    padding-right: 2.5%;
+}
+
+.day-title .day-heading{
+    padding-top: 1%;
+    float:left;
+    font-size:1.5rem;
+    font-weight:700;
+}
+.day-title .date{
+    padding-top: 2%;
+    float:right;
+}
+
+/* SWIPER */
+
+/*body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}*/
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    object-fit: cover;
+    width:90%;
+    border-radius: 4px;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color:white !important;
+    --swiper-navigation-size: 24px !important;
+}
+
+.day1, .day2, .day3{
+    margin-bottom: 20px;
+}
+
+.swiper-pagination{
+    position:static !important;
+}
+
+.team-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    border: 20px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.90);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
