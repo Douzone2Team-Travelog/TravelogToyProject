@@ -1969,8 +1969,8 @@ progress {
   }
 }
 .table {
-  --bs-table-bg: transparent;
-  --bs-table-accent-bg: transparent;
+  --bs-table-bg: white;
+  --bs-table-accent-bg: white;
   --bs-table-striped-color: #212529;
   --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
   --bs-table-active-color: #212529;
@@ -2330,8 +2330,8 @@ progress {
   margin-bottom: 0;
   line-height: 1.5;
   color: #212529;
-  background-color: transparent;
-  border: solid transparent;
+  background-color: white;
+  border: solid white;
   border-width: 1px 0;
 }
 .form-control-plaintext.form-control-sm, .form-control-plaintext.form-control-lg {
@@ -2455,7 +2455,7 @@ textarea.form-control-lg {
   background-color: #e9ecef;
 }
 .form-select:-moz-focusring {
-  color: transparent;
+  color: white;
   text-shadow: 0 0 0 #212529;
 }
 
@@ -2584,7 +2584,7 @@ textarea.form-control-lg {
   width: 100%;
   height: 1.5rem;
   padding: 0;
-  background-color: transparent;
+  background-color: white;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -2625,10 +2625,10 @@ textarea.form-control-lg {
 .form-range::-webkit-slider-runnable-track {
   width: 100%;
   height: 0.5rem;
-  color: transparent;
+  color: white;
   cursor: pointer;
   background-color: #dee2e6;
-  border-color: transparent;
+  border-color: white;
   border-radius: 1rem;
 }
 .form-range::-moz-range-thumb {
@@ -2654,10 +2654,10 @@ textarea.form-control-lg {
 .form-range::-moz-range-track {
   width: 100%;
   height: 0.5rem;
-  color: transparent;
+  color: white;
   cursor: pointer;
   background-color: #dee2e6;
-  border-color: transparent;
+  border-color: white;
   border-radius: 1rem;
 }
 .form-range:disabled {
@@ -2685,7 +2685,7 @@ textarea.form-control-lg {
   height: 100%;
   padding: 1rem 0.75rem;
   pointer-events: none;
-  border: 1px solid transparent;
+  border: 1px solid white;
   transform-origin: 0 0;
   transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
 }
@@ -2698,13 +2698,13 @@ textarea.form-control-lg {
   padding: 1rem 0.75rem;
 }
 .form-floating > .form-control::-moz-placeholder {
-  color: transparent;
+  color: white;
 }
 .form-floating > .form-control:-ms-input-placeholder {
-  color: transparent;
+  color: white;
 }
 .form-floating > .form-control::placeholder {
-  color: transparent;
+  color: white;
 }
 .form-floating > .form-control:not(:-moz-placeholder-shown) {
   padding-top: 1.625rem;
@@ -3016,8 +3016,8 @@ textarea.form-control-lg {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background-color: transparent;
-  border: 1px solid transparent;
+  background-color: white;
+  border: 1px solid white;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   border-radius: 0.25rem;
@@ -3362,7 +3362,7 @@ textarea.form-control-lg {
 }
 .btn-outline-primary:disabled, .btn-outline-primary.disabled {
   color: #64a19d;
-  background-color: transparent;
+  background-color: white;
 }
 
 .btn-outline-secondary {
@@ -3387,7 +3387,7 @@ textarea.form-control-lg {
 }
 .btn-outline-secondary:disabled, .btn-outline-secondary.disabled {
   color: #7464a1;
-  background-color: transparent;
+  background-color: white;
 }
 
 .btn-outline-success {
@@ -3412,7 +3412,7 @@ textarea.form-control-lg {
 }
 .btn-outline-success:disabled, .btn-outline-success.disabled {
   color: #67c29c;
-  background-color: transparent;
+  background-color: white;
 }
 
 .btn-outline-info {
@@ -3437,7 +3437,7 @@ textarea.form-control-lg {
 }
 .btn-outline-info:disabled, .btn-outline-info.disabled {
   color: #1cabc4;
-  background-color: transparent;
+  background-color: white;
 }
 
 .btn-outline-warning {
@@ -3462,7 +3462,7 @@ textarea.form-control-lg {
 }
 .btn-outline-warning:disabled, .btn-outline-warning.disabled {
   color: #e4c662;
-  background-color: transparent;
+  background-color: white;
 }
 
 .btn-outline-danger {
@@ -3487,7 +3487,7 @@ textarea.form-control-lg {
 }
 .btn-outline-danger:disabled, .btn-outline-danger.disabled {
   color: #a16468;
-  background-color: transparent;
+  background-color: white;
 }
 
 .btn-outline-light {
@@ -3512,7 +3512,7 @@ textarea.form-control-lg {
 }
 .btn-outline-light:disabled, .btn-outline-light.disabled {
   color: #f8f9fa;
-  background-color: transparent;
+  background-color: white;
 }
 
 .btn-outline-dark {
@@ -3537,7 +3537,7 @@ textarea.form-control-lg {
 }
 .btn-outline-dark:disabled, .btn-outline-dark.disabled {
   color: #212529;
-  background-color: transparent;
+  background-color: white;
 }
 
 .btn-outline-black {
@@ -3562,7 +3562,7 @@ textarea.form-control-lg {
 }
 .btn-outline-black:disabled, .btn-outline-black.disabled {
   color: #000;
-  background-color: transparent;
+  background-color: white;
 }
 
 .btn-outline-white {
@@ -3587,7 +3587,7 @@ textarea.form-control-lg {
 }
 .btn-outline-white:disabled, .btn-outline-white.disabled {
   color: #fff;
-  background-color: transparent;
+  background-color: white;
 }
 
 .btn-link {
@@ -3667,9 +3667,9 @@ textarea.form-control-lg {
   vertical-align: 0.255em;
   content: "";
   border-top: 0.3em solid;
-  border-right: 0.3em solid transparent;
+  border-right: 0.3em solid white;
   border-bottom: 0;
-  border-left: 0.3em solid transparent;
+  border-left: 0.3em solid white;
 }
 .dropdown-toggle:empty::after {
   margin-left: 0;
@@ -3810,9 +3810,9 @@ textarea.form-control-lg {
   vertical-align: 0.255em;
   content: "";
   border-top: 0;
-  border-right: 0.3em solid transparent;
+  border-right: 0.3em solid white;
   border-bottom: 0.3em solid;
-  border-left: 0.3em solid transparent;
+  border-left: 0.3em solid white;
 }
 .dropup .dropdown-toggle:empty::after {
   margin-left: 0;
@@ -3830,9 +3830,9 @@ textarea.form-control-lg {
   margin-left: 0.255em;
   vertical-align: 0.255em;
   content: "";
-  border-top: 0.3em solid transparent;
+  border-top: 0.3em solid white;
   border-right: 0;
-  border-bottom: 0.3em solid transparent;
+  border-bottom: 0.3em solid white;
   border-left: 0.3em solid;
 }
 .dropend .dropdown-toggle:empty::after {
@@ -3863,9 +3863,9 @@ textarea.form-control-lg {
   margin-right: 0.255em;
   vertical-align: 0.255em;
   content: "";
-  border-top: 0.3em solid transparent;
+  border-top: 0.3em solid white;
   border-right: 0.3em solid;
-  border-bottom: 0.3em solid transparent;
+  border-bottom: 0.3em solid white;
 }
 .dropstart .dropdown-toggle:empty::after {
   margin-left: 0;
@@ -3891,7 +3891,7 @@ textarea.form-control-lg {
   text-align: inherit;
   text-decoration: none;
   white-space: nowrap;
-  background-color: transparent;
+  background-color: white;
   border: 0;
 }
 .dropdown-item:hover, .dropdown-item:focus {
@@ -3906,7 +3906,7 @@ textarea.form-control-lg {
 .dropdown-item.disabled, .dropdown-item:disabled {
   color: #adb5bd;
   pointer-events: none;
-  background-color: transparent;
+  background-color: white;
 }
 
 .dropdown-menu.show {
@@ -4088,7 +4088,7 @@ textarea.form-control-lg {
 .nav-tabs .nav-link {
   margin-bottom: -1px;
   background: none;
-  border: 1px solid transparent;
+  border: 1px solid white;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
@@ -4098,8 +4098,8 @@ textarea.form-control-lg {
 }
 .nav-tabs .nav-link.disabled {
   color: #6c757d;
-  background-color: transparent;
-  border-color: transparent;
+  background-color: white;
+  border-color: white;
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
@@ -4208,8 +4208,8 @@ textarea.form-control-lg {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: transparent;
-  border: 1px solid transparent;
+  background-color: white;
+  border: 1px solid white;
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
 }
@@ -4276,7 +4276,7 @@ textarea.form-control-lg {
     z-index: 1000;
     flex-grow: 1;
     visibility: visible !important;
-    background-color: transparent;
+    background-color: white;
     border-right: 0;
     border-left: 0;
     transition: none;
@@ -4329,7 +4329,7 @@ textarea.form-control-lg {
     z-index: 1000;
     flex-grow: 1;
     visibility: visible !important;
-    background-color: transparent;
+    background-color: white;
     border-right: 0;
     border-left: 0;
     transition: none;
@@ -4382,7 +4382,7 @@ textarea.form-control-lg {
     z-index: 1000;
     flex-grow: 1;
     visibility: visible !important;
-    background-color: transparent;
+    background-color: white;
     border-right: 0;
     border-left: 0;
     transition: none;
@@ -4435,7 +4435,7 @@ textarea.form-control-lg {
     z-index: 1000;
     flex-grow: 1;
     visibility: visible !important;
-    background-color: transparent;
+    background-color: white;
     border-right: 0;
     border-left: 0;
     transition: none;
@@ -4488,7 +4488,7 @@ textarea.form-control-lg {
     z-index: 1000;
     flex-grow: 1;
     visibility: visible !important;
-    background-color: transparent;
+    background-color: white;
     border-right: 0;
     border-left: 0;
     transition: none;
@@ -4540,7 +4540,7 @@ textarea.form-control-lg {
   z-index: 1000;
   flex-grow: 1;
   visibility: visible !important;
-  background-color: transparent;
+  background-color: white;
   border-right: 0;
   border-left: 0;
   transition: none;
@@ -5030,7 +5030,7 @@ textarea.form-control-lg {
   position: relative;
   padding: 1rem 1rem;
   margin-bottom: 1rem;
-  border: 1px solid transparent;
+  border: 1px solid white;
   border-radius: 0.25rem;
 }
 
@@ -5181,7 +5181,7 @@ textarea.form-control-lg {
 }
 
 .progress-bar-striped {
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, white 25%, white 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, white 75%, white);
   background-size: 1rem 1rem;
 }
 
@@ -5564,7 +5564,7 @@ textarea.form-control-lg {
   height: 1em;
   padding: 0.25em 0.25em;
   color: #000;
-  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+  background: white url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
   border: 0;
   border-radius: 0.25rem;
   opacity: 0.5;
@@ -5959,7 +5959,7 @@ textarea.form-control-lg {
 .tooltip .tooltip-arrow::before {
   position: absolute;
   content: "";
-  border-color: transparent;
+  border-color: white;
   border-style: solid;
 }
 
@@ -6062,7 +6062,7 @@ textarea.form-control-lg {
   position: absolute;
   display: block;
   content: "";
-  border-color: transparent;
+  border-color: white;
   border-style: solid;
 }
 
@@ -6325,8 +6325,8 @@ textarea.form-control-lg {
   background-color: #fff;
   background-clip: padding-box;
   border: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
+  border-top: 10px solid white;
+  border-bottom: 10px solid white;
   opacity: 0.5;
   transition: opacity 0.6s ease;
 }
@@ -6378,7 +6378,7 @@ textarea.form-control-lg {
   height: 2rem;
   vertical-align: -0.125em;
   border: 0.25em solid currentColor;
-  border-right-color: transparent;
+  border-right-color: white;
   border-radius: 50%;
   -webkit-animation: 0.75s linear infinite spinner-border;
           animation: 0.75s linear infinite spinner-border;
@@ -8046,9 +8046,9 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-transparent {
+.bg-white {
   --bs-bg-opacity: 1;
-  background-color: transparent !important;
+  background-color: white !important;
 }
 
 .bg-opacity-10 {
@@ -11500,14 +11500,14 @@ body {
 }
 #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
   outline: none;
-  background-color: transparent;
+  background-color: white;
 }
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background-color: transparent;
+    background-color: white;
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -11533,7 +11533,7 @@ body {
   #mainNav.navbar-shrink .nav-link {
     color: #000;
     padding: 1.5rem 1.5rem 1.25rem;
-    border-bottom: 0.25rem solid transparent;
+    border-bottom: 0.25rem solid white;
   }
   #mainNav.navbar-shrink .nav-link:hover {
     color: #64a19d;
@@ -11564,7 +11564,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.5) 75%, #000 100%), url("../images/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11576,7 +11576,7 @@ body {
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: white;
   -webkit-background-clip: text;
           background-clip: text;
 }
@@ -11592,6 +11592,7 @@ body {
 }
 @media (min-width: 992px) {
   .masthead {
+  	top: 80px;
     height: 100vh;
     padding: 0;
   }
@@ -11608,7 +11609,7 @@ body {
 
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(to bottom, #000 0%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0.8) 100%);
 }
 .about-section p {
   margin-bottom: 5rem;
