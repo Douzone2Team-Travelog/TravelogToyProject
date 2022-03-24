@@ -310,7 +310,7 @@ figure {
 
 img,
 svg {
-  vertical-align: middle;
+  vertical-align: middle  !important;;
 }
 
 table {
@@ -1402,6 +1402,7 @@ progress {
   .col-lg-6 {
     flex: 0 0 auto;
     width: 50%;
+    vertical-align: middle;
   }
 
   .col-lg-7 {
@@ -11623,8 +11624,8 @@ body {
 }
 @media (min-width: 992px) {
   .projects-section .featured-text {
-    padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    /* padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #64a19d; */
   }
 }
 .projects-section .project-text {

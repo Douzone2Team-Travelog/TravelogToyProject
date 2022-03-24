@@ -8,6 +8,7 @@
         <title>Travelog</title>
         <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
         <link rel="stylesheet" href="../css/header.css" />
+        <link rel="stylesheet" href="../css/index_youtube.css" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -15,13 +16,17 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../css/styles.css" rel="stylesheet" />
+        <link href="../css/index.css" rel="stylesheet" />
         <link rel="import" href="footer.html">
+    
         <script src="https://www.w3schools.com/lib/w3.js"></script>
         <script src="../js/loadHtml.js"></script>
+        <script defer src="../js/youtube.js"></script>
 
         
     </head>
-    <body id="page-top">
+    <body id="page-top" style="background-color: #f8f9fa;">
+        
         <!-- Navigation-->
         <script>loadHTML("header.html")</script>
         <!-- Masthead-->
@@ -37,31 +42,48 @@
             </div>
         </header>
         <!-- About-->
-        <section class="about-section text-center" id="about">
-            <div class="container px-4 px-lg-5">
+        
+        <section class="about-section text-center" id="about" style="height: 1500px; margin: 10rem;">
+            <!-- <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="text-white mb-4">팀원 및 기능</h2>
-                        <p class="text-white-50">
-                        	여행 사진 (임지영 님) = 사진 보기, 사진 상세보기<br>
-                        	계정 관리 (이정민 님) = 로그인, 회원가입<br>
-                        	메인, 회원정보 보기 (강지호 님) = 메인 , 회원정보 보기<br>
-                        	일정 관리 (오윤성 님) = 일정 추가, 일정 보기<br>
-                        </p>
                     </div>
+                </div> -->
+                <div class="inner " style="font-size: 5rem;">
+                        <h1 class="margin">Welcome To Travelog</h1>
+                        <hr style="height:5px; width:100%; color:grey; margin-bottom: 50px;">
+                    </div>
+                <div class="youtube container-fluid bg-1 text-center"> 
+                    <div class="youtube__area">
+                        <div id="player"></div>
+                    </div>
+                    <div class="youtube__cover"></div> 
+                    
                 </div>
-                <img class="img-fluid" src="../images/0.jpg" alt="..." />
-            </div>
+            <!-- </div> -->
         </section>
         <!-- Projects-->
+        
         <section class="projects-section bg-light" id="projects">
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
+                
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../images/1.jpg" alt="..." /></div>
+                    
+                    <div class="col-xl-8 col-lg-7"> 
+                        <div class="wrapper">
+                            <div class="card"><img src="https://cdn.pixabay.com/photo/2014/08/15/11/29/beach-418742_1280.jpg"/>
+                                <div class="info">
+                                    <h1>Beach</h1>
+                                    <p>A beach is a landform alongside a body of water which consists of loose particles. The particles composing a beach are typically made from rock, such as sand, gravel, shingle, pebbles, etc.</p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>여행 사진(임지영 님)</h4>
+                            <h2>여행 사진(임지영 님)</h2>
                             <p class="text-black-50 mb-0">
                             	여행 사진과 관련된 내용입니다<br>사진 추가, 사진 보기, 사진 지우기 <br><br>
                             	<div class="col-auto" style="margin: 0 auto">
@@ -75,7 +97,17 @@
                 </div>
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="../images/2.jpg" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="wrapper">
+                            <div class="card"><img src="https://cdn.pixabay.com/photo/2016/10/18/21/22/beach-1751455_1280.jpg"/>
+                                <div class="info">
+                                    <h1>Beach</h1>
+                                    <p>A beach is a landform alongside a body of water which consists of loose particles. The particles composing a beach are typically made from rock, such as sand, gravel, shingle, pebbles, etc.</p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -90,7 +122,17 @@
                 </div>
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="../images/3.jpg" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="wrapper">
+                            <div class="card"><img src="https://cdn.pixabay.com/photo/2016/10/18/21/22/beach-1751455_1280.jpg"/>
+                                <div class="info">
+                                    <h1>Beach</h1>
+                                    <p>A beach is a landform alongside a body of water which consists of loose particles. The particles composing a beach are typically made from rock, such as sand, gravel, shingle, pebbles, etc.</p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -110,7 +152,17 @@
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../images/4.jpg" alt="..." /></div>
+                    <div class="col-xl-8 col-lg-7">
+                        <div class="wrapper">
+                            <div class="card"><img src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"/>
+                                <div class="info">
+                                    <h1>Mountain</h1>
+                                    <p>백두산(白頭山)은 한반도에서 가장 높은 산이다. 북한과 중국 국경에 있는 화산으로 화산의 분류 체계에 따르면 성층화산, 활화산, 초화산에 속한다. 한반도에서 모든 산의 '조종산'이다. 봉우리는 총 16개로 최고봉은 해발 2,744m인 병사봉(兵使峰)[4]으로 북한 지역에 있으며,[5] 각 봉우리 정상 사이에 칼데라 호수인 천지를 품었다. 압록강, 두만강, 송화강의 발원지이다.</p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>회원 관련(이정민 님, 강지호 님)</h4>
@@ -132,7 +184,17 @@
                 </div>
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="../images/5.jpg" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="wrapper">
+                            <div class="card" ><img src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"/>
+                                <div class="info">
+                                    <h1>Mountain</h1>
+                                    <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -147,7 +209,17 @@
                 </div>
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="../images/6.jpg" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="wrapper">
+                            <div class="card"><img src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"/>
+                                <div class="info">
+                                    <h1>Mountain</h1>
+                                    <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -168,7 +240,17 @@
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../images/7.jpg" alt="..." /></div>
+                    <div class="col-xl-8 col-lg-7">
+                        <div class="wrapper">
+                            <div class="card"><img src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"/>
+                                <div class="info">
+                                    <h1>Mountain</h1>
+                                    <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                              <h4>일정 관리</h4>
@@ -185,7 +267,18 @@
                 </div>
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="../images/8.jpg" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="wrapper">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"/>
+                                <div class="info">
+                                    <h1>Mountain</h1>
+                                    <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -200,7 +293,17 @@
                 </div>
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="../images/9.jpg" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="wrapper">
+                            <div class="card"><img src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"/>
+                                <div class="info">
+                                    <h1>Mountain</h1>
+                                    <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
