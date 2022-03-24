@@ -2,6 +2,7 @@ const searchButton = document.getElementById('searchButton')
 let resultTable = document.getElementById('resultTable')
 const mapCheck = document.getElementById('mapCheck')
 const searchData = document.getElementsByClassName("searchData");
+const memberInfoTableBody = document.getElementById("memberInfoTableBody")
 
 for(let i=0; i<searchData.length; i++){
 	searchData[i].addEventListener('keyup', (e)=>{
@@ -14,17 +15,16 @@ for(let i=0; i<searchData.length; i++){
 }
 
 searchButton.addEventListener('click', ()=>{
-	console.log("eeeeeeeeeeeeeeeeeeeee")
-	const inputName = document.getElementById("name").value.trim();
-	const inputId = document.getElementById("idd").value.trim();
-	const inputNumber = document.getElementById("number").value.trim();
-	let memberInfo = document.getElementById("memberInfoTableBody").getElementsByTagName("tr");
-	
+	let inputName = document.getElementById("name").value.trim();
+	let inputId = document.getElementById("idd").value.trim();
+	let inputNumber = document.getElementById("number").value.trim();
+	let memberInfo = memberInfoTableBody.getElementsByTagName("tr");
+
 	for(let i=0; i<memberInfo.length; i++){
 		let member = memberInfo[i].getElementsByTagName("td");
-		let name_check = true;
-		let id_check = true;
-		let number_check = true;
+		let name_check = false;
+		let id_check = false;
+		let number_check = false;
 		
 		let name = member[0].firstChild.data;
 		let id = member[1].firstChild.data;
@@ -32,36 +32,31 @@ searchButton.addEventListener('click', ()=>{
 		let number = member[3].firstChild.data;
 
 		if(inputName){
-			if(name !== inputName){
-				name_check = false;
+			if(name == inputName){
+				name_check = true;
 			}
 		}
 		if(inputId){
-			if(id !== inputId){
-				id_check = false;
+			if(id == inputId){
+				id_check = true;
 			}
 		}
 		if(inputNumber){
-			if(number !== inputNumber){
-				number_check = false;
+			if(number == inputNumber){
+				number_check = true;
 			}
 		}
-		if(name_check && id_check && number_check){
+		if(name_check || id_check || number_check){
 			resultTable.appendChild(memberInfo[i])
 		}
 	}
-	console.log("resultTable.childElementCount = "+resultTable.childElementCount)
-	console.log("resultTable.childNodes = "+resultTable.childNodes)
-	console.log(resultTable.childNodes)
-	console.log("resultTable.childNodes.length = "+resultTable.childNodes.length)
+
 	if(resultTable.childElementCount == 0){
+		searchButton.disabled = true;
+		document.getElementById("name").value="";
+		document.getElementById("idd").value="";
+		document.getElementById("number").value="";
 		alert("해당 회원 정보가 없습니다 다시 입력해주세요")
 	}
-	console.log(document.getElementById("memberInfoTableBody").childNodes)
-})
 
-/*
-mapCheck.addEventListener('click', (e)=>{
-	
 })
-*/
