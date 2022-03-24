@@ -43,10 +43,11 @@
 }
 
 .time_pick {
-	position: absolute !important;
-    width: 20%;
+	
     align-items: center;
-    left: 7%;
+	width: 100%;
+    align-items: center;
+    right: 0;
 }
 
 .timepicker_wrap {
